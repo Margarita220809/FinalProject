@@ -21,7 +21,7 @@ public class Assertions {
         public void elementIsDisplayed(String xpath){
             assertTrue(elements.isElementDisplayed(xpath),"Элемент не отображается, а должен был");
         }
-        public void equalsOfText(String xpath,String expectedText){
+        public void equalsOfTextByXpath(String xpath,String expectedText){
             assertEquals(elements.getElementText(elements.findElementByXpath(xpath)),expectedText,
                     "Я ожидал получить текст "+expectedText+". А получил "+
                             elements.getElementText(elements.findElementByXpath(xpath))+".");
@@ -31,7 +31,7 @@ public class Assertions {
                 "Я ожидал получить текст "+expected+". А получил "+
                         actual+".");
     }
-    public void equalOfUrl(String actual, String expected){
+    public void equalsOfText(String actual, String expected){
         assertEquals(actual,expected,
                 "Я ожидал получить текст "+expected+". А получил "+
                         actual+".");

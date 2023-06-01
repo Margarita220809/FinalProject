@@ -8,6 +8,7 @@ import functions.Waiters;
 import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 import pages.ClickerPage;
+import pages.ProductCategoryPage;
 
 public class BaseTest {
     protected WebDriver driver = DriverFactory.startChromeDriver();
@@ -17,7 +18,6 @@ public class BaseTest {
     protected Elements elements = new Elements(driver);
     protected Waiters waiters = new Waiters(driver);
     protected ClickerPage clickerPage = new ClickerPage(driver);
-
-
+    protected ProductCategoryPage productCategoryPage = new ProductCategoryPage(driver);
 
 }
